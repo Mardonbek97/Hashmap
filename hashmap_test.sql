@@ -16,4 +16,6 @@ BEGIN
 END;
 /
 
-Select session_cache.get_value('B') val from dual
+Select session_cache.get_value('B') val1,
+       session_cache.get_value(2) val2
+   from dual

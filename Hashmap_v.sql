@@ -1,3 +1,7 @@
+/*
+If you don't have a grant to create context(sys_context) 
+you can easily use this object type
+*/
 Create Or Replace View Hashmap_v as
  select * 
   from table t

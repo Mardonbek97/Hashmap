@@ -4,9 +4,13 @@ BEGIN
 
   session_cache.init;
 
-  session_cache.set_value('A', 'Test1');
-  session_cache.set_value('B', 'Test2');
-  session_cache.set_value('C', 'Test3');
+  /*
+  You can get dynamic parameter from frontend
+  */
+  session_cache.set_value('param_1', 'Value_1');
+  session_cache.set_value('param_2', 'Value_2');
+  session_cache.set_value('param_3', 'Value_3');
+
 
   session_cache.set_value(1, 'Test1');
   session_cache.set_value(2, 'Test2');

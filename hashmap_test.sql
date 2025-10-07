@@ -32,9 +32,10 @@ BEGIN
      i := i + 1;
 End Loop;
 
+    --Using small records is more efficient despite running query every time
     iF session_cache.get_value(1) = 'Test' Then
         Raise_application_Error(-20001, 'You have an access the user role!!!')
-    End iF;  
+    End iF;      
 
 END;
 /
